@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- LEAFLET CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   	crossorigin=""/>
+	
+	<!-- MY CSS AND JS -->
+	<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+    	<script type="text/javascript" src="JS/mapscript.js"></script>
+    	<title>I'm the Map!</title>
+
+	<!-- LEAFLET JS -->
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	crossorigin=""></script>
+  </head>
+  
+  <body>
+	<h1>Where would you like to visit?</h1>
+	<div id="search">
+		<input type="text" id="location_input">
+		<button id="find" onclick="searchLocation()">Find</button>
+	</div>
+	<!-- div to display error message -->
+	<div id="message"></div>
+	<!-- div to display map -->	
+	<div id="mapid"></div>
+	<!-- div to display weather info -->
+	<div id="weather"></div>
+	<!-- div to display sun info -->
+	<div id="sun"></div>
+	<!-- div to display recent searches -->
+	<div id="searches">
+		Recent Searches
+		<!-- this list gets added to in the js junction -->
+		<ul id="recent"></ul>
+	</div>
+  </body>
+</html>
